@@ -8,7 +8,7 @@ function App() {
   const [time, setTime] = useState("");
   const [weather, setWeather] = useState(null);
 
-  const [selectedLocation, setSelectedLocation] = useState("Hyderabad");
+  const [selectedLocation, setSelectedLocation] = useState(null);
 
   const handleLocationChange = (e) => {
     setSelectedLocation(e.target.value);
@@ -165,7 +165,7 @@ function App() {
               </div>
             ) : (
               <>
-                <p className="error">OOPS ! CANNOT GET WEATHER</p>
+                <p className="error">Select a City</p>
               </>
             )}
           </div>
